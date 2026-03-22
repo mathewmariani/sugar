@@ -1,0 +1,194 @@
+:root {
+    --highlight-color: null;
+    --highlight-background: null;
+}
+
+::selection {
+    /* color: var(--highlight-color); */
+    background: var(--highlight-background);
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 1000;
+}
+
+nav {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: left;
+
+    color: var(--bs-white);
+    background-color: var(--bs-purple);
+}
+
+.badge {
+    color: var(--bs-purple);
+    background-color: var(--bs-yellow);
+}
+
+.title-card {
+    position: absolute;
+    width: 100%;
+    max-width: calc(700px + 10%);
+    top: calc(50% - 50px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+
+    background-color: var(--bs-purple);
+    color: var(--bs-white);
+}
+
+/* footer */
+
+.footer {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+section.footer {
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+
+    color: var(--bs-purple);
+    background-color: var(--bs-yellow);
+}
+
+section.footer a {
+    text-decoration: none;
+
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+
+    color: var(--bs-purple);
+    background-color: var(--bs-yellow);
+
+    border-radius: 4px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: var(--bs-purple);
+}
+
+section.footer a:hover {
+    color: var(--bs-yellow);
+    background-color: var(--bs-purple);
+}
+
+/* */
+
+section.connect {
+    padding: 1rem 1rem;
+}
+
+section.connect a {
+    text-decoration: none;
+
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+
+    color: var(--bs-yellow);
+    background-color: var(--bs-purple);
+
+    border-radius: 4px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: var(--bs-yellow);
+}
+
+section.connect a:hover {
+    color: var(--bs-purple);
+    background-color: var(--bs-yellow);
+}
+
+/* contact */
+
+section.contact {
+    padding: 1rem 1rem;
+    background-color: var(--bs-purple);
+    color: var(--bs-white);
+}
+
+section.contact a {
+    text-decoration: none;
+
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+
+    color: var(--bs-yellow);
+    background-color: var(--bs-purple);
+
+    border-radius: 4px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: var(--bs-yellow);
+}
+
+section.contact a:hover {
+    color: var(--bs-purple);
+    background-color: var(--bs-yellow);
+}
+
+/* projects */
+
+section.projects {
+    padding: 1rem 1rem;
+    background-color: var(--bs-purple);
+    color: var(--bs-white);
+}
+
+a.project {
+    text-decoration: none !important;
+    background-color: var(--bs-purple);
+    color: var(--bs-white);
+
+    padding: 1rem 1rem;
+}
+
+a.project:hover {
+    background-color: var(--bs-pink);
+}
+
+div.entry {
+    text-decoration: none !important;
+    background-color: var(--bs-purple);
+    color: var(--bs-white);
+
+    padding: 1rem 1rem;
+}
+
+div.entry:hover {
+    background-color: var(--bs-pink);
+}
+
+a.course {
+    text-decoration: none !important;
+    background-color: var(--bs-purple);
+    color: var(--bs-white);
+
+    padding: 1rem 1rem;
+}
+
+a.course:hover {
+    background-color: var(--bs-pink);
+}
