@@ -1,3 +1,5 @@
+@import "nunito.css";
+
 :root {
     --highlight-color: null;
     --highlight-background: null;

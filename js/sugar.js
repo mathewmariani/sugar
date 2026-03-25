@@ -1,19 +1,47 @@
-// https://flatuicolors.com/palette/ca
-const palette = ["#ff9ff3", "#feca57", "#ff6b6b", "#48dbfb", "#1dd1a1"];
+const palette = [
+  "#ff9ff3",
+  "#feca57",
+  "#ff6b6b",
+  "#48dbfb",
+  "#1dd1a1"
+];
+
 const hearts = ["🩷", "💛", "❤️", "🩵", "💚"];
 
-window.addEventListener("mousedown", (e) => {
-  const color = palette.shift();
-  document.documentElement.style.setProperty("--highlight-background", color);
-  palette.push(color);
-});
+let initialized = false;
 
-window.addEventListener("DOMContentLoaded", () => {
+function initSugar() {
+  if (initialized) {
+    return;
+  }
+
+  initialized = true;
+
   const index = Math.floor(Math.random() * palette.length);
-  const color = palette[index];
-  document.documentElement.style.setProperty("--highlight-color", color);
+  const root = document.documentElement;
+  
+  root.style.setProperty("--highlight-color", palette[index]);
 
-  const heart = hearts[index];
   const el = document.getElementById("with-love");
-  if (el) el.textContent = heart;
-});
+  if (el) {
+    el.textContent = hearts[index];
+  }
+
+  window.addEventListener("mousedown", () => {
+    const next = palette.shift();
+    if (!next) {
+      return;
+    }
+    root.style.setProperty("--highlight-background", next);
+    palette.push(next);
+  });
+}
+
+// Auto-run
+if (typeof window !== "undefined") {
+  if (document.readyState === "loading") {
+    window.addEventListener("DOMContentLoaded", initSugar);
+  } else {
+    initSugar();
+  }
+}
