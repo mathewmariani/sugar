@@ -104,6 +104,7 @@ header {
 }
 
 .list-item-navigation {
+    font-weight: 1000;
     color: var(--bs-purple);
     background-color: var(--bs-yellow);
     border-color: var(--bs-purple);
