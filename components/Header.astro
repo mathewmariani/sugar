@@ -1,0 +1,11 @@
+---
+const { name } = Astro.props;
+---
+
+<header>
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      Mathew Mariani{ name ? ` / ${name}` : "" }
+    </a>
+  </div>
+</header>

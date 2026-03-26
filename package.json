@@ -1,5 +1,10 @@
 {
   "name": "@mathewmariani/sugar",
   "version": "1.0.0",
-  "type": "module"
+  "type": "module",
+  "peerDependencies": {
+    "astro": "^4 || ^5 || ^6",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.11.0"
+  }
 }
